@@ -1,3 +1,5 @@
+FORK: Trying to get PowerQueen working...
+
 # Home Assistant Add-on: BatMON
 
 ![Home Assistant Dashboard Screenshot](https://repository-images.githubusercontent.com/445289350/03f3d531-37cf-48be-84c8-e6c75270fc87)
@@ -33,6 +35,7 @@ I created this to compare BMS readings for a detailed evaluation of BMS reliabil
 * Victron SmartShunt (make sure to update to the latest firmware
   and [enable GATT](https://community.victronenergy.com/questions/93919/victron-bluetooth-ble-protocol-publication.html)
   in the VictronConnect app)
+* PowerQueen
 
 I tested the add-on on a Raspberry Pi 4 using Home Assistant Operating System.
 
@@ -63,7 +66,7 @@ Add an entry for each device, such as:
 find a list of visible Bluetooth devices in the add-on log. Alternatively you can enter the device name here as
 displayed in the discovery list.
 
-`type` can be `jk`, `jbd`, `ant`, `daly`, `supervolt`, `sok`, `victron` or `dummy`.
+`type` can be `jk`, `jbd`, `ant`, `daly`, `supervolt`, `sok`, `victron`, 'pq' or `dummy`.
 
 With the `alias` field you can set the MQTT topic prefix and the name as displayed in Home Assistant.
 Otherwise, the name as found in Bluetooth  discovery is used.
